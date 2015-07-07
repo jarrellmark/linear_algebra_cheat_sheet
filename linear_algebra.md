@@ -23,22 +23,36 @@ Etc.
 Add up all the stuff in the same row/column.
 
 ```
-1 2   +   5 6   =   6  8
+1 2   +   5 6   =    6  8
 3 4       7 8       10 12
 ```
 
 ### Subtraction
 
-See Addition.
+Similar to Addition.
+
+```
+7 2   -   5 6   =    2 -4
+3 4       7 8       -4 12
+```
 
 ### Element-Wise Multiplication
 
 Similar to Addition.
 
+#### Vector
+
 ```
-1   *   4   =   4
-6       1       6
+1   *   4   =    4
+6       1        6
 3       5       15
+```
+
+#### Matrix
+
+```
+1 2   *   5 6   =    5 12
+3 4       7 8       21 32
 ```
 
 ### Scalar Multiplication
@@ -46,13 +60,13 @@ Similar to Addition.
 Multiply the scalar by each value.
 
 ```
-3   *   3 5 4   =   9  15 12
-        6 1 2       18 3  6
+3   *   3 5 4   =    9 15 12
+        6 1 2       18  3  6
 ```
 
 ### Scalar Product (Dot Product)
 
-Multiply two vectors into one number.
+Multiplies two vectors into one number.
 
 Multiply corresponding row/columns. Then sum those.
 
@@ -61,16 +75,22 @@ Multiply corresponding row/columns. Then sum those.
 7       2
 3       5
 
-1*6 + 7*2 + 3*5 = 6 + 14 + 15 = 20 + 15 = 36
+1*6 + 7*2 + 3*5 = 6 + 14 + 15
+
+                = 20 + 15
+
+                = 36
 ```
 
 ### Matrix-Vector Multiplication
 
-Treat each row as a vector.
+To multiply A * B = C:
 
-Multiply that row vector with the vector.
+* Treat each row in A as a vector.
 
-Place the result in same row in the output.
+* Multiply that row vector by B.
+
+* Place the result in same row in C.
 
 ```
 3 5 4 6   *   2   =   78
@@ -105,17 +125,17 @@ Place the result in same row in the output.
 
 ### Matrix-Matrix Multiplication
 
-Multiplying A * B = C.
+To multiply A * B = C.
 
-Do matrix-vector multiplication on A.row_1 * B.column_1.
+* Do matrix-vector multiplication on A.row_1 * B.column_1.
 
-Place result in C.row_1,column_1.
+* Place result in C.row_1,column_1.
 
-Do matrix-vector multiplication on A.row_1 * B.column_2.
+* Do matrix-vector multiplication on A.row_1 * B.column_2.
 
-Place result in C.row_1,column_2.
+* Place result in C.row_1,column_2.
 
-Etc.
+* Etc.
 
 ```
 3 5 4 6   *   2 6   =   69 60
@@ -241,7 +261,7 @@ Special Matrices
 
 ### Identity Matrix
 
-Think of the scalar ```c * 1 = c```.
+Think of this in scalar terms: ```c * 1 = c```.
 
 1 is the scalar multiplication identity because multiplying it by c doesn't
 change c's value.
@@ -265,7 +285,7 @@ examples.
 
 ### Inverse Matrix
 
-Think of the scalar ```c * 1/c = 1```.
+Think of this in scalar terms: ```c * 1/c = 1```.
 
 ```7 * 1/7 = 7```.
 
