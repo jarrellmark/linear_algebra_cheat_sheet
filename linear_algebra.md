@@ -1,5 +1,5 @@
-Linear Algebra
-==============
+Linear Algebra Cheatsheet
+=========================
 
 Operations
 ----------
