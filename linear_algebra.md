@@ -71,7 +71,7 @@ Multiplies two vectors into one number.
 Multiply corresponding row/columns. Then sum those.
 
 ```
-1   *   6   =   36
+1   *   6   =   35
 7       2
 3       5
 
@@ -79,7 +79,7 @@ Multiply corresponding row/columns. Then sum those.
 
                 = 20 + 15
 
-                = 36
+                = 35
 ```
 
 ### Matrix-Vector Multiplication
