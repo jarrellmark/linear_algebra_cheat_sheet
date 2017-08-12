@@ -234,7 +234,7 @@ Steps:
 2*8   =   16
 ```
 
-### Euclidean Norm
+### Euclidean Norm (L2 Norm)
 
 It's like absolute value for vectors.
 
